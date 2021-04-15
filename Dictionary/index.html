@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h1>Language Dictionary</h1>
+<input id="ip" type="text">
+<button onclick="translationDic()">Translate</button>
+<script>
+    let array1 = ["English", "France", "Spain", "Japanese", "Korean", "Vietnamese"]
+    let array2 = ["Tiếng Anh", "Tiếng Pháp", "Tiếng Tây Ban Nha", "Tiếng Nhật", "Tiếng Hàn", "Tiếng Việt"];
+    let check = false;
+
+
+    function translationDic() {
+        let trans = document.getElementById("ip").value;
+        let i;
+        for (i = 0; i < array1.length; i++) {
+            if (trans === array1[i]) {
+                check = true
+                break;
+            }
+        }
+        if (check) {
+            alert(array2[i])
+        } else
+            alert('Not founded !')
+    }
+</script>
+</body>
+</html>
