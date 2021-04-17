@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let arr = [15,23,43,77,964,64,87,32,1022,56]
+    let max = arr[0]
+    let i=0
+    for (;i<arr.length;i++){
+        if(max < arr[i]){
+            max = arr[i]
+        }
+    }
+    document.write(`Giá trị lớn nhất là ${max} , ở vị trí thứ ${arr.indexOf(max)}`)
+</script>
+</body>
+</html>
