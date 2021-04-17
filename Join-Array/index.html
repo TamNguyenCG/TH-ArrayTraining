@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+  let arr1=[];
+  let arr2=[];
+  let arr3=[];
+  let length=5;
+  for (let i=0;i<length;i++){
+    arr1.push(+prompt(`Nhập mảng a: `))
+  }
+  document.write(`Mảng a là: ${arr1}<br>`)
+  for (let i=0;i<length;i++){
+    arr2.push(+prompt(`Nhập mảng b: `))
+  }
+  document.write(`Mảng b là: ${arr2}<br>`)
+  arr3 = arr1.concat(arr2);
+  document.write(`Nối mảng a và b: ${arr3}`)
+</script>
+</body>
+</html>
