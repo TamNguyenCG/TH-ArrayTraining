@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let arr = [];
+    let length = 10;
+    for (let i = 0; i < length; i++) {
+        arr.push(+prompt("Nhập giá trị mảng: "))
+    }
+    document.write(arr+"<br>")
+    function sortArray(){
+        arr.sort(function(a, b){return b-a});
+        document.getElementById('sort').innerHTML= arr;
+    }
+</script>
+<button id="sort" onclick="sortArray()">Click to sort</button>
+</body>
+</html>
