@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+  let arr=[1,12,23,34,45,56,67,78,89,99]
+  let first = 0
+  let last = arr.length-1;
+  document.write(`arr=[${arr}]`)
+  while (first<last){
+    let temp = arr[first];
+    arr[first]=arr[last];
+    arr[last] = temp;
+    first++;
+    last--;
+  }
+  document.write(`<br>Reversed =[${arr}]`)
+</script>
+</body>
+</html>
